@@ -16,7 +16,6 @@ h1 {
   cursor: pointer;
   min-width: 40%;
   max-width: 40%;
-  
 }
 
 img {
@@ -24,7 +23,7 @@ img {
   margin: 0 auto;
   max-width: 70%;
   cursor: pointer;
-  
+  max-height:  200px;
 }
 
 
@@ -109,12 +108,6 @@ img.meme:hover {
     transform: scale(1.1);
   }
 }
-@media (hover: hover) {
-  img.meme:checked {
-    border: 1px solid red;
-  }
-}
-
 @media only screen and (max-width: 1920px) {
   body {
     font-size: 15px;
