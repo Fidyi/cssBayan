@@ -1,0 +1,95 @@
+body{
+  background-color: #955400; 
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.accordion {
+  align-self: center;
+  overflow: hidden;
+  font-family:'Times New Roman', Times, serif;
+  background: #955400;
+  cursor: pointer;
+  min-width: 60%;
+  max-width: 60%;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 70%;
+  cursor: pointer;
+}
+
+.accordion__label,
+.accordion__content {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-left: 10%;
+}
+.accordion__content {
+  display: none;
+}
+.accordion__label {
+  display: block;
+  color: #070505;
+  font-weight: 400;
+  position: relative;
+  transition: background 1s;
+  border-top: 1px solid black;
+  cursor: pointer;
+}
+
+
+.accordion__label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 18px;
+  height:9px;
+  background-image: url('./PikPng.com_tribal-arrow-png_1668703.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  transition: transform 0.5s;
+  display: none;
+}
+
+.accordion__content:hover {
+  display: block;
+}
+.accordion__input {
+  display: none;
+}
+
+.accordion__input:hover ~ .accordion__content {
+  display: block;
+}
+.accordion__input:checked ~ .accordion__content {
+  display: block;
+}
+.accordion__input:checked ~ .accordion__label::after {
+  transform: translateY(-50%) rotate(0.25turn);
+}
+.accordion__input:hover ~ .accordion__label::after {
+  transform: translateY(-50%) rotate(0.25turn);
+}
+.accordion:hover > .accordion_container > .accordion__label > span {
+  color: red;
+}
+.accordion_container > input[type="checkbox"]:checked + .accordion__label > span {
+  color: black;
+}
+.accordion:hover .accordion__label::after {
+  display: block;
+}
+
+
+
+
+
+
