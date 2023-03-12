@@ -63,6 +63,9 @@ img {
 .accordion__content:hover {
   display: block;
 }
+.accordion__input:checked ~ .accordion__content img.meme {
+  border: 1px solid rgb(197, 194, 25);
+}
 .accordion__input {
   display: none;
 }
@@ -101,7 +104,27 @@ img.meme:hover {
     transform: scale(1.1);
   }
 }
+@media (hover: hover) {
+  img.meme:checked {
+    border: 1px solid red;
+  }
+}
 
+@media only screen and (max-width: 1920px) {
+  body {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 820px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+}
 
 
 
