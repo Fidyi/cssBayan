@@ -118,10 +118,10 @@ img.meme:hover {
 }
 @media only screen and (max-width: 820px) {
   body {
-    font-size: 10px;
+    font-size: 6px;
   }
   h1 {
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -129,7 +129,7 @@ img.meme:hover {
     font-size: 5px;
   }
   h1 {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 
